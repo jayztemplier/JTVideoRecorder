@@ -153,7 +153,7 @@ static JTCameraEngine* theEngine;
             dispatch_async(_captureQueue, ^{
                 [_encoder finishWithCompletionHandler:^{
                     
-                    [_encoder cropVideoAtURL:url completion:^{
+//                    [_encoder cropVideoAtURL:url completion:^{
                         self.isCapturing = NO;
                         _encoder = nil;
                         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -163,10 +163,10 @@ static JTCameraEngine* theEngine;
                         
                         NSURL *urlf = [NSURL fileURLWithPath:myPathDocs];
                         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-                        [library writeVideoAtPathToSavedPhotosAlbum:urlf completionBlock:^(NSURL *assetURL, NSError *error){
+                        [library writeVideoAtPathToSavedPhotosAlbum:url completionBlock:^(NSURL *assetURL, NSError *error){
                             NSLog(@"save completed");
                             [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
-                        }];
+//                        }];
                     }];
                 }];
                 

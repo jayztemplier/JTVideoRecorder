@@ -8,6 +8,9 @@
 #import "JTVideoEncoder.h"
 #import <AVFoundation/AVFoundation.h>
 
+#define kOutputVideoWidth 300
+#define kOutputVideoHeight kOutputVideoWidth
+
 @implementation JTVideoEncoder
 
 @synthesize path = _path;
@@ -30,8 +33,9 @@
     _writer = [AVAssetWriter assetWriterWithURL:url fileType:AVFileTypeQuickTimeMovie error:nil];
     NSDictionary* settings = [NSDictionary dictionaryWithObjectsAndKeys:
                               AVVideoCodecH264, AVVideoCodecKey,
-                              [NSNumber numberWithInt: cx], AVVideoWidthKey,
-                              [NSNumber numberWithInt: cy], AVVideoHeightKey,
+                              [NSNumber numberWithInt: kOutputVideoWidth], AVVideoWidthKey,
+                              [NSNumber numberWithInt: kOutputVideoHeight], AVVideoHeightKey,
+                              AVVideoScalingModeResizeAspectFill, AVVideoScalingModeKey,
                               nil];
     _videoInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo outputSettings:settings];
     _videoInput.expectsMediaDataInRealTime = YES;
