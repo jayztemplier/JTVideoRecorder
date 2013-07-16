@@ -27,6 +27,7 @@
 - (void) pauseCapture;
 - (void) stopCapture;
 - (void) resumeCapture;
+- (AVCaptureVideoPreviewLayer*)getFrontCameraPreviewLayerInstance;
 
 @property (atomic, readwrite) BOOL isCapturing;
 @property (atomic, readwrite) BOOL isPaused;

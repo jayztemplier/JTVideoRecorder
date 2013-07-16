@@ -1,0 +1,522 @@
+TJTVideoRecorder
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist JTVideoRecorder/JTVideoRecorder-Info.plist
+cProcessPCH /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth JTVideoRecorder/JTVideoRecorder-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder normal armv7s
+cGenerateDSYMFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder
+cCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png JTVideoRecorder/Default.png
+cCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png JTVideoRecorder/Default@2x.png
+cCopyStringsFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/InfoPlist.strings JTVideoRecorder/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png icon.png
+cCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png JTVideoRecorder/Default-568h@2x.png
+cCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png icon@2x.png
+cCompileXIB /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib
+cProcessProductPackaging "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision
+cTouch /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent
+cCodeSign /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000050ED385D0000000000000110
+t1357723741
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c00000000517F61D000000000000001A7
+t1367302608
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c00000000517F61D000000000000001E5
+t1367302608
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000517F61D1000000000036CDF0
+t1367302609
+s3591664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000517F61D1000000000003AE00
+t1367302609
+s241152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000517F61D10000000000322700
+t1367302609
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000517F61D100000000001694D0
+t1367302609
+s1479888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000517F61D10000000000041310
+t1367302609
+s267024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000517F61D2000000000062AD10
+t1367302610
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000517F61D100000000000015F7
+t1367302609
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000517F61D200000000003596B0
+t1367302610
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000517F61D20000000000000E8D
+t1367302610
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000517F61D300000000011BCDF0
+t1367302611
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c00000000517F61D40000000000001B73
+t1367302612
+s7027
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default-568h@2x.png
+c0000000051E4A30900000000000048A2
+t1373938441
+s18594
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default.png
+c0000000051E4A309000000000000198C
+t1373938441
+s6540
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default@2x.png
+c0000000051E4A3090000000000003EEB
+t1373938441
+s16107
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.h
+c0000000051E4A3090000000000000187
+t1373938441
+s391
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m
+c0000000051E4A30900000000000009E0
+t1373938441
+s2528
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.h
+c0000000051E4A462000000000000035E
+t1373938786
+s862
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m
+c0000000051E4AD920000000000003069
+t1373941138
+s12393
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.h
+c0000000051E4A3090000000000000411
+t1373938441
+s1041
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m
+c0000000051E4A3090000000000001AA8
+t1373938441
+s6824
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoRecorder-Prefix.pch
+c0000000051E4A309000000000000014D
+t1373938441
+s333
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.h
+c0000000051E4A3090000000000000104
+t1373938441
+s260
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m
+c0000000051E4A9F70000000000000C59
+t1373940215
+s3161
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/InfoPlist.strings
+c0000000051E4A309000000000000002D
+t1373938441
+s45
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib
+c0000000051E4A3090000000000002A74
+t1373938441
+s10868
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m
+c0000000051E4A3090000000000000167
+t1373938441
+s359
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent
+t1373939292
+s432
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o
+t1373939240
+s93100
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o
+t1373940999
+s69860
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o
+t1373939240
+s39248
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoRecorder.LinkFileList
+c0000000051E4A6280000000000000399
+t1373939240
+s921
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o
+t1373940216
+s89068
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o
+t1373939240
+s3420
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth
+t1373939240
+s4607152
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+t1373941000
+s476
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM
+t1373940999
+s102
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png
+t1373939292
+s7014
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png
+t1373939292
+s3688
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png
+t1373939292
+s6316
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist
+t1373939240
+s1097
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder
+t1373941000
+s80288
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/PkgInfo
+t1373939240
+s8
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist
+t1373939240
+s485
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision
+t1373939292
+s24805
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/InfoPlist.strings
+t1373939292
+s42
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/JTViewController.nib
+t1373939292
+s1556
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png
+t1373939292
+s3444
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png
+t1373939292
+s8431
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/icon.png
+c0000000051E4A3090000000000001074
+t1373938441
+s4212
+
+N/Users/Jeremy/Documents/Test/JTVideoRecorder/icon@2x.png
+c0000000051E4A3090000000000002595
+t1373938441
+s9621
+
+N/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision
+c0000000051E4A38600000000000060E5
+t1373938566
+s24805
+
+NJTVideoRecorder/JTVideoRecorder-Info.plist
+c0000000051E4A30900000000000004F8
+t1373938441
+s1272
+
+CBuild AST from /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m
+r0
+
+CBuild AST from /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m
+r0
+
+CBuild AST from /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m
+r0
+
+CBuild AST from /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m
+r0
+
+CBuild AST from /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1ba10313e594b741^8c120413e594b741^---0#1#0#--18"Check dependencies36"1A4E6180-D667-423B-AFD5-145B20E74A21-
+
+CCodeSign /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+s395633939.319138
+e395633939.505487
+r1
+xCodeSign
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CodeSign builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app99d35113e594b741^056a8113e594b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/0000000000000000^993"CodeSign builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 26719a0b74e0b49435877baedf2af7f9a5effe96 --resource-rules=/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist --entitlements /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app36"D9B5F7FE-D3FA-47E4-BCD4-A64FCC18AB87-
+
+CCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395632040.547606
+e395632040.662289
+r1
+xCompileC
+xbuilds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m8a928ca8dd94b741^a48ba9a8dd94b741^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m0000000000000000^4028"CompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o JTVideoRecorder/JTAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -include /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.d --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTAppDelegate.m -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTAppDelegate.o36"ADAE9468-601F-4B11-837E-05EE035A0E99-
+
+CCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395633939.055304
+e395633939.153545
+r1
+xCompileC
+xbuilds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m:170:32: warning: unused variable 'urlf' [-Wunused-variable]
+o                        NSURL *urlf = [NSURL fileURLWithPath:myPathDocs];
+o                               ^
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.mf2420e13e594b741^b54f2713e594b741^-266"/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m:170:32: warning: unused variable 'urlf' [-Wunused-variable]                        NSURL *urlf = [NSURL fileURLWithPath:myPathDocs];                               ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@22"Unused variable 'urlf'-395633939#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@93"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m0000000000000000^169#31#169#31#5882#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@93"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m0000000000000000^4034"CompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o JTVideoRecorder/JTCameraEngine.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -include /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.d --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTCameraEngine.m -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTCameraEngine.o36"7A6622FE-A00A-48DD-9BFF-70849C628032-
+
+CCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395632040.547588
+e395632040.687164
+r1
+xCompileC
+xbuilds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.mf2958ca8dd94b741^1041b1a8dd94b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m0000000000000000^4034"CompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o JTVideoRecorder/JTVideoEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -include /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.d --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoEncoder.m -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoEncoder.o36"CE49DD7E-4538-4B22-A687-5ABBDFA6F564-
+
+CCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395633016.310818
+e395633016.389848
+r1
+xCompileC
+xbuilds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m86af4f78e194b741^7dcc6378e194b741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m0000000000000000^4046"CompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o JTVideoRecorder/JTViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -include /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.d --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTViewController.m -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTViewController.o36"C3A671D0-748E-4DE9-8152-A46DCF36972C-
+
+CCompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395632040.547624
+e395632040.584006
+r1
+xCompileC
+xbuilds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.mc0958ca8dd94b741^1d8f95a8dd94b741^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m0000000000000000^3974"CompileC builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o JTVideoRecorder/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -include /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/main.m -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/main.o36"3E8ACC90-704E-4105-97BC-3C4F971AE058-
+
+CCompileXIB /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib
+s395632092.183654
+e395632092.851551
+r1
+xCompileXIB
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib
+o2013-07-15 18:48:12.775 Interface Builder Cocoa Touch Tool[64773:f07] CFPreferences: user home directory at file://localhost/Users/Jeremy/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compiling /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xibac1f2fdcdd94b741^54fed9dcdd94b741^-239"2013-07-15 18:48:12.775 Interface Builder Cocoa Touch Tool[64773:f07] CFPreferences: user home directory at file://localhost/Users/Jeremy/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib0000000000000000^921"CompileXIB JTVideoRecorder/en.lproj/JTViewController.xib    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/JTViewController.nib /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/JTViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"54BAE564-4738-45A4-966F-5BC350F797DC-
+
+CCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png JTVideoRecorder/Default-568h@2x.png
+s395632092.182702
+e395632092.295921
+r1
+xCopyPNGFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png
+xJTVideoRecorder/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png JTVideoRecorder/Default-568h@2x.pngdd0c2fdcdd94b741^59c14bdcdd94b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default-568h@2x.png0000000000000000^722"CopyPNGFile "builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png" "JTVideoRecorder/Default-568h@2x.png"    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default-568h@2x.png" "/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default-568h@2x.png"36"B4220E4B-93A3-4227-AA2E-F4A8D12AD45C-
+
+CCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png JTVideoRecorder/Default.png
+s395632092.182619
+e395632092.245670
+r1
+xCopyPNGFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png
+xJTVideoRecorder/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png JTVideoRecorder/Default.pngb1162fdcdd94b741^eee93edcdd94b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default.png0000000000000000^682"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png JTVideoRecorder/Default.png    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default.png /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default.png36"4CDDE2D5-9DB0-410E-9A5A-985BB76EA928-
+
+CCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png JTVideoRecorder/Default@2x.png
+s395632092.182677
+e395632092.299234
+r1
+xCopyPNGFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png
+xJTVideoRecorder/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png JTVideoRecorder/Default@2x.pngd21a2fdcdd94b741^fe9a4cdcdd94b741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default@2x.png0000000000000000^702"CopyPNGFile "builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png" "JTVideoRecorder/Default@2x.png"    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/Default@2x.png" "/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Default@2x.png"36"D4531663-A411-4905-84F4-37E34A25ABDD-
+
+CCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png icon.png
+s395632092.183758
+e395632092.245677
+r1
+xCopyPNGFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png
+xicon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png icon.png8a1f2fdcdd94b741^67ed3edcdd94b741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/icon.png0000000000000000^638"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png icon.png    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/Jeremy/Documents/Test/JTVideoRecorder/icon.png /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon.png36"D3B1436E-E278-422C-8B7A-21DB42BCEA4C-
+
+CCopyPNGFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png icon@2x.png
+s395632092.183849
+e395632092.254164
+r1
+xCopyPNGFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png
+xicon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png icon@2x.png342f2fdcdd94b741^171141dcdd94b741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/icon@2x.png0000000000000000^658"CopyPNGFile "builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png" "icon@2x.png"    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/Jeremy/Documents/Test/JTVideoRecorder/icon@2x.png" "/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/icon@2x.png"36"586A9E41-4D70-4BD4-B99E-50DE23CE61EC-
+
+CCopyStringsFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/InfoPlist.strings JTVideoRecorder/en.lproj/InfoPlist.strings
+s395632092.182476
+e395632092.201033
+r1
+xCopyStringsFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/InfoPlist.strings
+xJTVideoRecorder/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy JTVideoRecorder/en.lproj/InfoPlist.strings83192fdcdd94b741^607633dcdd94b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/en.lproj/InfoPlist.strings0000000000000000^662"CopyStringsFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj/InfoPlist.strings JTVideoRecorder/en.lproj/InfoPlist.strings    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/en.lproj -- JTVideoRecorder/en.lproj/InfoPlist.strings36"A9434592-6651-46BD-8722-E7EF71343191-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist
+s395632040.241824
+e395632040.245128
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xbuilds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist82393ea8dd94b741^37e13ea8dd94b741^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist000000000080d041^818"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app36"5A0BB157-3D4F-4A62-8286-568AF017B6AF-
+
+CGenerateDSYMFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder
+s395633939.208737
+e395633939.242425
+r1
+xGenerateDSYMFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Generate /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM66863513e594b741^5d173e13e594b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM/0000000000000000^784"GenerateDSYMFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app.dSYM36"E9F6E46C-E777-4420-8F50-B8BB51E6A1D7-
+
+CLd /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder normal armv7s
+s395633939.159959
+e395633939.202329
+r1
+xLd
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder
+xnormal
+xarmv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Link /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder51bf2b13e594b741^81cb3313e594b741^---0#0#0#--1401"Ld builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder normal armv7s    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos -filelist /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/Objects-normal/armv7s/JTVideoRecorder.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.1 -framework QuartzCore -framework AssetsLibrary -framework CoreVideo -framework CoreMedia -framework AVFoundation -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/JTVideoRecorder36"B41F4F92-693E-4A33-BC29-2A7FE174EE03-
+
+CProcessInfoPlistFile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist JTVideoRecorder/JTVideoRecorder-Info.plist
+s395632040.241840
+e395632040.246738
+r1
+xProcessInfoPlistFile
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist
+xJTVideoRecorder/JTVideoRecorder-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Process JTVideoRecorder/JTVideoRecorder-Info.plist93393ea8dd94b741^492a3fa8dd94b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoRecorder-Info.plist0000000000000000^942"ProcessInfoPlistFile builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist JTVideoRecorder/JTVideoRecorder-Info.plist    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility JTVideoRecorder/JTVideoRecorder-Info.plist -genpkginfo /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/ResourceRules.plist -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/Info.plist36"36B9A7F5-2AB0-445E-90FC-F00ED6CF685D-
+
+CProcessPCH /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth JTVideoRecorder/JTVideoRecorder-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395632040.258755
+e395632040.517108
+r1
+xProcessPCH
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth
+xJTVideoRecorder/JTVideoRecorder-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile JTVideoRecorder/JTVideoRecorder-Prefix.pch9cdd42a8dd94b741^356084a8dd94b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoRecorder-Prefix.pch0000000000000000^3880"ProcessPCH builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth JTVideoRecorder/JTVideoRecorder-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-generated-files.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-own-target-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-all-target-headers.hmap -iquote /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder-project-headers.hmap -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources/armv7s -I/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/DerivedSources -F/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.dia -c /Users/Jeremy/Documents/Test/JTVideoRecorder/JTVideoRecorder/JTVideoRecorder-Prefix.pch -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.pth -MMD -MT dependencies -MF /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/PrecompiledHeaders/JTVideoRecorder-Prefix-eoipxrtybgdgqferslejxaxpxjcr/JTVideoRecorder-Prefix.pch.d36"24A01565-81C6-4661-9CFC-C1BA1D63CF51-
+
+CProcessPCH /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Index/PrecompiledHeaders/JTVideoRecorder-Prefix-aamgdicwzzwavxgodqzxwowdtmfd_ast/JTVideoRecorder-Prefix.pch.pth JTVideoRecorder/JTVideoRecorder-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision
+s395632092.900210
+e395632092.925731
+r1
+xProcessProductPackaging
+x/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection233"ProcessProductPackaging "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovisionc003e7dcdd94b741^cafbecdcdd94b741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision0000000000000000^768"ProcessProductPackaging "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/Jeremy/Library/MobileDevice/Provisioning Profiles/0D8C3706-0A88-47C5-8615-E39165F898A7.mobileprovision" -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app/embedded.mobileprovision36"82080BD7-2CFD-41A7-878D-F2FFB6253090-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent
+s395632092.950543
+e395632092.967904
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection268"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent23d9f3dcdd94b741^f7c7f7dcdd94b741^---0#0#0#-19%DVTDocumentLocation2@184"file://localhost/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent000000000080d041^864"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Intermediates/JTVideoRecorder.build/Debug-iphoneos/JTVideoRecorder.build/JTVideoRecorder.xcent36"C543C0D3-115C-4DA2-A258-2DCB2F61814A-
+
+CTouch /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+s395633939.294970
+e395633939.302315
+r1
+xTouch
+x/Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Touch /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.appf7b04b13e594b741^41644d13e594b741^---0#0#0#--459"Touch builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app    cd /Users/Jeremy/Documents/Test/JTVideoRecorder    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Jeremy/Documents/Test/JTVideoRecorder/builds/JTVideoRecorder/Build/Products/Debug-iphoneos/JTVideoRecorder.app36"39857A29-16B0-446A-9DB2-74CDEDA8E900-
+

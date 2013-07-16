@@ -8,6 +8,7 @@
 
 #import "JTViewController.h"
 #import "JTCameraEngine.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface JTViewController ()
 @property (strong, nonatomic) IBOutlet UIView *videoPreviewContainer;
@@ -28,6 +29,8 @@
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGestureHandler:)];
     longPressGesture.minimumPressDuration = 0.3;
     [self.view addGestureRecognizer:longPressGesture];
+    
+    [self addCameraBubble];
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,6 +89,24 @@
     _started = NO;
     [[JTCameraEngine engine] stopCapture];
     _statusLabel.text = @"Saved!";
+}
+
+#pragma mark Camera bubbles
+- (void)addCameraBubble
+{
+    CALayer *videoLayer = (CALayer *)[[JTCameraEngine engine] getFrontCameraPreviewLayerInstance];
+    videoLayer.cornerRadius = 20.f;
+    CAReplicatorLayer *xLayer = [CAReplicatorLayer layer];
+    xLayer.instanceCount = 3;
+    xLayer.instanceDelay = .2;
+    xLayer.instanceGreenOffset = -.03;
+    xLayer.instanceRedOffset = -.02;
+    xLayer.instanceBlueOffset = -.01;
+    xLayer.instanceAlphaOffset = -.05;
+    xLayer.preservesDepth = YES;
+    xLayer.instanceTransform = CATransform3DMakeTranslation(110, 0, 0);
+    [xLayer addSublayer:videoLayer];
+    [self.view.layer addSublayer:xLayer];
 }
 
 @end

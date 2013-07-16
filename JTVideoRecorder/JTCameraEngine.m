@@ -17,10 +17,14 @@ static JTCameraEngine* theEngine;
 @interface JTCameraEngine  () <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate>
 {
     AVCaptureSession* _session;
+    AVCaptureSession* _frontSession;
     AVCaptureVideoPreviewLayer* _preview;
+    AVCaptureVideoPreviewLayer* _frontPreview;
     dispatch_queue_t _captureQueue;
     AVCaptureConnection* _audioConnection;
     AVCaptureConnection* _videoConnection;
+    NSTimer *_sessionTimer;
+    BOOL sessionFlag;
     
     JTVideoEncoder* _encoder;
     BOOL _isCapturing;
@@ -118,6 +122,8 @@ static JTCameraEngine* theEngine;
         _preview.connection.videoOrientation = AVCaptureVideoOrientationPortrait;
     }
 }
+
+
 
 - (void) startCapture
 {
@@ -331,4 +337,41 @@ static JTCameraEngine* theEngine;
     return _preview;
 }
 
+- (AVCaptureVideoPreviewLayer*)getFrontCameraPreviewLayerInstance
+{
+    _frontSession = [[AVCaptureSession alloc] init];
+    if([_frontSession canSetSessionPreset:AVCaptureSessionPresetLow]) {
+        _frontSession.sessionPreset =  AVCaptureSessionPresetLow;
+    }
+    NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    AVCaptureDevice *camera;
+    for (AVCaptureDevice *device in devices) {
+        if (device.position == AVCaptureDevicePositionFront) {
+            camera = device;
+        }
+    }
+    AVCaptureDeviceInput* input = [AVCaptureDeviceInput deviceInputWithDevice:camera error:nil];
+    
+    [_frontSession addInput:input];
+    
+    [_frontSession startRunning];
+    
+    _frontPreview = [AVCaptureVideoPreviewLayer layerWithSession:_frontSession];
+    _frontPreview.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    _frontPreview.frame = CGRectMake(0, 0, 50, 50);
+    _frontPreview.connection.videoOrientation = AVCaptureVideoOrientationPortrait;
+    return _frontPreview;
+}
+
+- (void)switchSession
+{
+    if (sessionFlag) {
+        [_frontSession stopRunning];
+        [_session startRunning];
+    } else {
+        [_session stopRunning];
+        [_frontSession startRunning];
+    }
+    sessionFlag = !sessionFlag;
+}
 @end
