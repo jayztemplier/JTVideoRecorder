@@ -9,10 +9,12 @@
 #import "JTViewController.h"
 #import "JTCameraEngine.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIImage+StackBlur.h"
 
 @interface JTViewController ()
 @property (strong, nonatomic) IBOutlet UIView *videoPreviewContainer;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
+@property (strong, nonatomic) UIImageView *backgroundImageView;
 @property (nonatomic, assign) BOOL started;
 @end
 
@@ -21,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.view insertSubview:_backgroundImageView belowSubview:_videoPreviewContainer];
     [self startPreview];
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(saveVideo )];
     tapGesture.numberOfTapsRequired = 2;
@@ -30,7 +34,6 @@
     longPressGesture.minimumPressDuration = 0.3;
     [self.view addGestureRecognizer:longPressGesture];
     
-    [self addCameraBubble];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +46,7 @@
 - (void) startPreview
 {
     AVCaptureVideoPreviewLayer* preview = [[JTCameraEngine engine] getPreviewLayer];
+    [JTCameraEngine engine].delegate = self;
     [preview removeFromSuperlayer];
     preview.frame = _videoPreviewContainer.bounds;
     [[preview connection] setVideoOrientation:AVCaptureVideoOrientationPortrait];
@@ -107,6 +111,20 @@
     xLayer.instanceTransform = CATransform3DMakeTranslation(110, 0, 0);
     [xLayer addSublayer:videoLayer];
     [self.view.layer addSublayer:xLayer];
+}
+
+#pragma mark - Camera Engine Delegate
+- (void)cameraEngine:(JTCameraEngine *)engine didProcessImage:(CGImageRef)imageRef
+{
+    if (imageRef != nil) {
+        UIImage *image= [UIImage imageWithCGImage:imageRef];
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            UIImage *blurImage = [image stackBlur:50];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+                [_backgroundImageView setImage:blurImage];
+//            });
+//        });
+    }
 }
 
 @end

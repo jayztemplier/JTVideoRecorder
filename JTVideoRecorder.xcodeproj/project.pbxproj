@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353666BF1794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */; };
+		353666C01794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */; };
 		3548061917926A7300D3ECF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061817926A7300D3ECF5 /* UIKit.framework */; };
 		3548061B17926A7300D3ECF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061A17926A7300D3ECF5 /* Foundation.framework */; };
 		3548061D17926A7300D3ECF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061C17926A7300D3ECF5 /* CoreGraphics.framework */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		353666BD1794FBA400E9E9FE /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
+		353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
 		3548061517926A7300D3ECF5 /* JTVideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTVideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3548061817926A7300D3ECF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3548061A17926A7300D3ECF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +157,8 @@
 		3548061E17926A7300D3ECF5 /* JTVideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				353666BD1794FBA400E9E9FE /* UIImage+StackBlur.h */,
+				353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */,
 				357445621792725400F1E845 /* JTCameraEngine.h */,
 				357445631792725400F1E845 /* JTCameraEngine.m */,
 				3548065517926A8A00D3ECF5 /* JTVideoEncoder.h */,
@@ -316,6 +322,7 @@
 				3548062517926A7300D3ECF5 /* main.m in Sources */,
 				3548062917926A7300D3ECF5 /* JTAppDelegate.m in Sources */,
 				3548063217926A7300D3ECF5 /* JTViewController.m in Sources */,
+				353666BF1794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */,
 				3548065917926A8A00D3ECF5 /* JTVideoEncoder.m in Sources */,
 				357445651792725D00F1E845 /* JTCameraEngine.m in Sources */,
 			);
@@ -326,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3548064A17926A7300D3ECF5 /* JTVideoRecorderTests.m in Sources */,
+				353666C01794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */,
 				3548065A17926A8A00D3ECF5 /* JTVideoEncoder.m in Sources */,
 				357445641792725400F1E845 /* JTCameraEngine.m in Sources */,
 			);

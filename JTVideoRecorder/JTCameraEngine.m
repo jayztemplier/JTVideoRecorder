@@ -95,7 +95,7 @@ static JTCameraEngine* theEngine;
         [videoout setSampleBufferDelegate:self queue:_captureQueue];
         
         NSDictionary* setcapSettings = [NSDictionary dictionaryWithObjectsAndKeys:
-                                        [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange], kCVPixelBufferPixelFormatTypeKey,
+                                        [NSNumber numberWithInt:kCVPixelFormatType_32BGRA], kCVPixelBufferPixelFormatTypeKey,
                                         nil];
         
         videoout.videoSettings = setcapSettings;
@@ -231,14 +231,64 @@ static JTCameraEngine* theEngine;
     
 }
 
+- (CGImageRef)sampleBufferRefToCGImageRef:(CMSampleBufferRef)sampleBuffer
+{
+    @autoreleasepool {
+        
+        CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+        /*Lock the image buffer*/
+        CVPixelBufferLockBaseAddress(imageBuffer,0);
+        /*Get information about the image*/
+        uint8_t *baseAddress = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);
+        size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
+        size_t width = CVPixelBufferGetWidth(imageBuffer);
+        size_t height = CVPixelBufferGetHeight(imageBuffer);
+        
+        /*Create a CGImageRef from the CVImageBufferRef*/
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
+        CGImageRef newImage = CGBitmapContextCreateImage(newContext);
+        
+        /*We release some components*/
+        CGContextRelease(newContext);
+        CGColorSpaceRelease(colorSpace);
+        
+        /*We display the result on the custom layer. All the display stuff must be done in the main thread because
+         UIKit is no thread safe, and as we are not in the main thread (remember we didn't use the main_queue)
+         we use performSelectorOnMainThread to call our CALayer and tell it to display the CGImage.*/
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if (_delegate && [_delegate respondsToSelector:@selector(cameraEngine:didProcessImage:)]) {
+                [_delegate cameraEngine:self didProcessImage:newImage];
+            }
+//            [self.customLayer setContents:(__bridge id)newImage];
+        });
+        
+        /*We display the result on the image view (We need to change the orientation of the image so that the video is displayed correctly).
+         Same thing as for the CALayer we are not in the main thread so ...*/
+        UIImage *image= [UIImage imageWithCGImage:newImage scale:1.0 orientation:UIImageOrientationRight];
+        
+        /*We relase the CGImageRef*/
+        CGImageRelease(newImage);
+        
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            [self.imageView setImage:image];
+//        });
+        
+        /*We unlock the  image buffer*/
+        CVPixelBufferUnlockBaseAddress(imageBuffer,0);
+    }
+    return nil;
+}
+
 - (void) captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     BOOL bVideo = YES;
-    
+
     @synchronized(self)
     {
         if (!self.isCapturing  || self.isPaused)
         {
+            [self sampleBufferRefToCGImageRef:sampleBuffer];
             return;
         }
         if (connection != _videoConnection)

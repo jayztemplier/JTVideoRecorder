@@ -16,6 +16,11 @@
 #import "AVFoundation/AVCaptureVideoPreviewLayer.h"
 #import "AVFoundation/AVMediaFormat.h"
 
+@class JTCameraEngine;
+@protocol JTCameraEngineDelegate <NSObject>
+- (void)cameraEngine:(JTCameraEngine *)engine didProcessImage:(CGImageRef)imageRef;
+@end
+
 @interface JTCameraEngine : NSObject
 
 + (JTCameraEngine*) engine;
@@ -29,6 +34,7 @@
 - (void) resumeCapture;
 - (AVCaptureVideoPreviewLayer*)getFrontCameraPreviewLayerInstance;
 
+@property (nonatomic, assign) id<JTCameraEngineDelegate> delegate;
 @property (atomic, readwrite) BOOL isCapturing;
 @property (atomic, readwrite) BOOL isPaused;
 

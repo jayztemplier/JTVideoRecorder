@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D492DA06-C348-4A4C-9551-A29A68C3FB59</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JTVideoRecorder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C30FC55C-3F27-45CC-8247-DE215427AE5D</key>
+		<string>ssh://github.com/jayztemplier/JTVideoRecorder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JTVideoRecorder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C30FC55C-3F27-45CC-8247-DE215427AE5D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jayztemplier/JTVideoRecorder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C30FC55C-3F27-45CC-8247-DE215427AE5D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C30FC55C-3F27-45CC-8247-DE215427AE5D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JTVideoRecorder</string>
+		</dict>
+	</array>
+</dict>
+</plist>
