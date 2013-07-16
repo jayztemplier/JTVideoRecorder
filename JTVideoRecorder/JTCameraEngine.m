@@ -265,7 +265,7 @@ static JTCameraEngine* theEngine;
         
         /*We display the result on the image view (We need to change the orientation of the image so that the video is displayed correctly).
          Same thing as for the CALayer we are not in the main thread so ...*/
-        UIImage *image= [UIImage imageWithCGImage:newImage scale:1.0 orientation:UIImageOrientationRight];
+//        UIImage *image= [UIImage imageWithCGImage:newImage scale:1.0 orientation:UIImageOrientationRight];
         
         /*We relase the CGImageRef*/
         CGImageRelease(newImage);

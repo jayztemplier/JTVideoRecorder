@@ -9,7 +9,9 @@
 #import "JTViewController.h"
 #import "JTCameraEngine.h"
 #import <QuartzCore/QuartzCore.h>
-#import "UIImage+StackBlur.h"
+#import "UIImage+DSP.h"
+#import "GPUImagePicture.h"
+#import "GPUImageTiltShiftFilter.h"
 
 @interface JTViewController ()
 @property (strong, nonatomic) IBOutlet UIView *videoPreviewContainer;
@@ -119,12 +121,27 @@
     if (imageRef != nil) {
         UIImage *image= [UIImage imageWithCGImage:imageRef];
 //        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-            UIImage *blurImage = [image stackBlur:50];
+        UIImage *blurImage = [self bluredImageOfImage:image];
 //            dispatch_async(dispatch_get_main_queue(), ^{
                 [_backgroundImageView setImage:blurImage];
 //            });
 //        });
     }
+}
+
+- (UIImage *)bluredImageOfImage:(UIImage *)image
+{
+    GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:image];
+    
+    GPUImageTiltShiftFilter *boxBlur = [[GPUImageTiltShiftFilter alloc] init];
+    boxBlur.blurSize = 0.5;
+    
+    [stillImageSource addTarget:boxBlur];
+    
+    [stillImageSource processImage];
+    
+    UIImage *processedImage = [stillImageSource imageFromCurrentlyProcessedOutput];
+    return processedImage;
 }
 
 @end

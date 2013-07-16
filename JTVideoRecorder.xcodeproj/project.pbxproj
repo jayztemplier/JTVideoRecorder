@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		353666BF1794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */; };
 		353666C01794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */; };
+		353666C31795307500E9E9FE /* UIImage+DSP.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666C21795307500E9E9FE /* UIImage+DSP.m */; };
+		353666C41795307500E9E9FE /* UIImage+DSP.m in Sources */ = {isa = PBXBuildFile; fileRef = 353666C21795307500E9E9FE /* UIImage+DSP.m */; };
+		353666C61795307E00E9E9FE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353666C51795307E00E9E9FE /* Accelerate.framework */; };
+		353666D4179532DF00E9E9FE /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353666CF179532CB00E9E9FE /* libGPUImage.a */; };
+		353666D7179533F300E9E9FE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353666D6179533F300E9E9FE /* OpenGLES.framework */; };
 		3548061917926A7300D3ECF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061817926A7300D3ECF5 /* UIKit.framework */; };
 		3548061B17926A7300D3ECF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061A17926A7300D3ECF5 /* Foundation.framework */; };
 		3548061D17926A7300D3ECF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3548061C17926A7300D3ECF5 /* CoreGraphics.framework */; };
@@ -39,6 +44,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		353666CE179532CB00E9E9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		353666D0179532CB00E9E9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+		353666D2179532D900E9E9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
 		3548064017926A7300D3ECF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3548060D17926A7300D3ECF5 /* Project object */;
@@ -51,6 +77,11 @@
 /* Begin PBXFileReference section */
 		353666BD1794FBA400E9E9FE /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
 		353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
+		353666C11795307500E9E9FE /* UIImage+DSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSP.h"; sourceTree = "<group>"; };
+		353666C21795307500E9E9FE /* UIImage+DSP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DSP.m"; sourceTree = "<group>"; };
+		353666C51795307E00E9E9FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		353666D6179533F300E9E9FE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		3548061517926A7300D3ECF5 /* JTVideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTVideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3548061817926A7300D3ECF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3548061A17926A7300D3ECF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353666D7179533F300E9E9FE /* OpenGLES.framework in Frameworks */,
+				353666D4179532DF00E9E9FE /* libGPUImage.a in Frameworks */,
+				353666C61795307E00E9E9FE /* Accelerate.framework in Frameworks */,
 				3F1177F31794DDDB00ED2C18 /* QuartzCore.framework in Frameworks */,
 				3548066517926B3200D3ECF5 /* AssetsLibrary.framework in Frameworks */,
 				3548066117926B1300D3ECF5 /* CoreVideo.framework in Frameworks */,
@@ -116,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		353666C9179532CA00E9E9FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353666CF179532CB00E9E9FE /* libGPUImage.a */,
+				353666D1179532CB00E9E9FE /* GPUImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3548060C17926A7300D3ECF5 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +189,9 @@
 		3548061717926A7300D3ECF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				353666D6179533F300E9E9FE /* OpenGLES.framework */,
+				353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */,
+				353666C51795307E00E9E9FE /* Accelerate.framework */,
 				3548061817926A7300D3ECF5 /* UIKit.framework */,
 				3548061A17926A7300D3ECF5 /* Foundation.framework */,
 				3548061C17926A7300D3ECF5 /* CoreGraphics.framework */,
@@ -157,6 +203,8 @@
 		3548061E17926A7300D3ECF5 /* JTVideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				353666C11795307500E9E9FE /* UIImage+DSP.h */,
+				353666C21795307500E9E9FE /* UIImage+DSP.m */,
 				353666BD1794FBA400E9E9FE /* UIImage+StackBlur.h */,
 				353666BE1794FBA400E9E9FE /* UIImage+StackBlur.m */,
 				357445621792725400F1E845 /* JTCameraEngine.h */,
@@ -220,6 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				353666D3179532D900E9E9FE /* PBXTargetDependency */,
 			);
 			name = JTVideoRecorder;
 			productName = JTVideoRecorder;
@@ -265,6 +314,12 @@
 			mainGroup = 3548060C17926A7300D3ECF5;
 			productRefGroup = 3548061617926A7300D3ECF5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 353666C9179532CA00E9E9FE /* Products */;
+					ProjectRef = 353666C8179532CA00E9E9FE /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3548061417926A7300D3ECF5 /* JTVideoRecorder */,
@@ -272,6 +327,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		353666CF179532CB00E9E9FE /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 353666CE179532CB00E9E9FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		353666D1179532CB00E9E9FE /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = 353666D0179532CB00E9E9FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3548061317926A7300D3ECF5 /* Resources */ = {
@@ -319,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353666C31795307500E9E9FE /* UIImage+DSP.m in Sources */,
 				3548062517926A7300D3ECF5 /* main.m in Sources */,
 				3548062917926A7300D3ECF5 /* JTAppDelegate.m in Sources */,
 				3548063217926A7300D3ECF5 /* JTViewController.m in Sources */,
@@ -336,12 +409,18 @@
 				353666C01794FBA400E9E9FE /* UIImage+StackBlur.m in Sources */,
 				3548065A17926A8A00D3ECF5 /* JTVideoEncoder.m in Sources */,
 				357445641792725400F1E845 /* JTCameraEngine.m in Sources */,
+				353666C41795307500E9E9FE /* UIImage+DSP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		353666D3179532D900E9E9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 353666D2179532D900E9E9FE /* PBXContainerItemProxy */;
+		};
 		3548064117926A7300D3ECF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3548061417926A7300D3ECF5 /* JTVideoRecorder */;
@@ -402,6 +481,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./GPUImage/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,6 +506,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./GPUImage/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
