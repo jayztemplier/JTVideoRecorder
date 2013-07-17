@@ -11,13 +11,19 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UIImage+DSP.h"
 #import "GPUImagePicture.h"
-#import "GPUImageTiltShiftFilter.h"
+#import "GPUImageGaussianBlurFilter.h"
+
+#define kBubbleSize 30
+#define kTimeBetweenBubbleCreation .5
 
 @interface JTViewController ()
 @property (strong, nonatomic) IBOutlet UIView *videoPreviewContainer;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 @property (strong, nonatomic) UIImageView *backgroundImageView;
 @property (nonatomic, assign) BOOL started;
+@property (assign, nonatomic) CGFloat value;
+@property (strong, nonatomic) UIImage *nextPhoto;
+@property (strong, nonatomic) NSTimer *bubbleTimer;
 @end
 
 @implementation JTViewController
@@ -42,6 +48,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self startBubbleTimer];
 }
 
 #pragma mark - Video
@@ -118,30 +130,71 @@
 #pragma mark - Camera Engine Delegate
 - (void)cameraEngine:(JTCameraEngine *)engine didProcessImage:(CGImageRef)imageRef
 {
-    if (imageRef != nil) {
-        UIImage *image= [UIImage imageWithCGImage:imageRef];
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        UIImage *blurImage = [self bluredImageOfImage:image];
-//            dispatch_async(dispatch_get_main_queue(), ^{
-                [_backgroundImageView setImage:blurImage];
-//            });
-//        });
+    if (!_nextPhoto) {
+        if (imageRef != nil) {
+            UIImage *image= [UIImage imageWithCGImage:imageRef];
+            _nextPhoto = [self bluredImageOfImage:image];
+//            [_backgroundImageView setImage:blurImage];
+            
+        }
     }
-}
+}   
 
 - (UIImage *)bluredImageOfImage:(UIImage *)image
 {
-    GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:image];
+    GPUImageGaussianBlurFilter *blurFilter =[[GPUImageGaussianBlurFilter alloc] init];
+    blurFilter.blurSize = 3.5;
+    UIImage *result = [blurFilter imageByFilteringImage:image];
+    return result;
+}
+
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    _value = sender.value;
+}
+
+#pragma mark - Photo Bubble
+- (void)startBubbleTimer
+{
+    if (_bubbleTimer && [_bubbleTimer isValid]) {
+        [_bubbleTimer invalidate];
+    }
+    _bubbleTimer = [NSTimer scheduledTimerWithTimeInterval:kTimeBetweenBubbleCreation target:self selector:@selector(createNewPhotoBubble) userInfo:nil repeats:YES];
+}
+
+- (void)createNewPhotoBubble
+{
+    if (!_nextPhoto) {
+        return;
+    }
+    // Get random value between 0 and 99
+    int x = arc4random() % (int)CGRectGetWidth(self.view.bounds);
+    // Get random number between 500 and 1000
+//    int y =  (arc4random() % 501) + 500;
     
-    GPUImageTiltShiftFilter *boxBlur = [[GPUImageTiltShiftFilter alloc] init];
-    boxBlur.blurSize = 0.5;
+    CALayer *layer = [CALayer layer];
+    layer.contents = (id)_nextPhoto.CGImage;
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    layer.frame = CGRectMake(x, -kBubbleSize, kBubbleSize, kBubbleSize);
+    layer.cornerRadius = kBubbleSize/2;
+//    CAShapeLayer *circleLayer = [CAShapeLayer layer];
+//    circleLayer.path = NSBe
+    layer.borderWidth = 1.f;
+    layer.masksToBounds = YES;
+    layer.borderColor = ([[JTCameraEngine engine] isCapturing] && ![[JTCameraEngine engine] isPaused])? [UIColor redColor].CGColor : [UIColor blackColor].CGColor;
+    [_backgroundImageView.layer addSublayer:layer];
+    _nextPhoto = nil;
+    [CATransaction begin]; {
+        [CATransaction setCompletionBlock:^{
+            [layer removeFromSuperlayer];
+        }];
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+        animation.fromValue = [NSValue valueWithCGPoint:layer.position];
+        layer.position = CGPointMake(x, CGRectGetHeight(self.view.bounds) + kBubbleSize); // HERE I UPDATE THE MODEL LAYER'S PROPERTY
+        animation.toValue = [NSValue valueWithCGPoint:layer.position];
+        animation.duration = 10.0;
+        [layer addAnimation:animation forKey:animation.keyPath];
+    } [CATransaction commit];
     
-    [stillImageSource addTarget:boxBlur];
-    
-    [stillImageSource processImage];
-    
-    UIImage *processedImage = [stillImageSource imageFromCurrentlyProcessedOutput];
-    return processedImage;
 }
 
 @end

@@ -283,12 +283,12 @@ static JTCameraEngine* theEngine;
 - (void) captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     BOOL bVideo = YES;
-
+    
+    [self sampleBufferRefToCGImageRef:sampleBuffer];
     @synchronized(self)
     {
         if (!self.isCapturing  || self.isPaused)
         {
-            [self sampleBufferRefToCGImageRef:sampleBuffer];
             return;
         }
         if (connection != _videoConnection)
