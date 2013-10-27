@@ -53,7 +53,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self startBubbleTimer];
+//    [self startBubbleTimer];
 }
 
 #pragma mark - Video
@@ -130,15 +130,14 @@
 #pragma mark - Camera Engine Delegate
 - (void)cameraEngine:(JTCameraEngine *)engine didProcessImage:(CGImageRef)imageRef
 {
-    if (!_nextPhoto) {
+//    if (!_nextPhoto) {
         if (imageRef != nil) {
             UIImage *image= [UIImage imageWithCGImage:imageRef];
             _nextPhoto = [self bluredImageOfImage:image];
-//            [_backgroundImageView setImage:blurImage];
-            
+            [_backgroundImageView setImage:_nextPhoto];
         }
-    }
-}   
+//    }
+}
 
 - (UIImage *)bluredImageOfImage:(UIImage *)image
 {

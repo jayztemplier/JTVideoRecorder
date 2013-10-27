@@ -243,6 +243,21 @@
             glDeleteRenderbuffers(1, &dataRenderbuffer);
             dataRenderbuffer = 0;
         }
+
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+        if (rawDataTextureCache)
+        {
+            CVOpenGLESTextureCacheFlush(rawDataTextureCache, 0);
+            CFRelease(rawDataTextureCache);
+            rawDataTextureCache = 0;
+        }
+#endif
+        
+        if (renderTarget)
+        {
+            CVPixelBufferRelease(renderTarget);
+            renderTarget = 0;
+        }
     });
 }
 
@@ -454,6 +469,16 @@
     else
     {
         return imageSize.width * 4;
+    }
+}
+
+- (void)setImageSize:(CGSize)newImageSize {
+    imageSize = newImageSize;
+    [self destroyDataFBO];
+    if (_rawBytesForImage != NULL && (![GPUImageContext supportsFastTextureUpload]))
+    {
+        free(_rawBytesForImage);
+        _rawBytesForImage = NULL;
     }
 }
 
